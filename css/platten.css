@@ -228,6 +228,7 @@ section {
 /* ── MATERIAL STUDIO ── */
 #studio {
     background: var(--beige);
+    padding-bottom: 0;
 }
 
 #studio .s-title {

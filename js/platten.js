@@ -26,7 +26,7 @@ const TEXS = MATS.map(m => {
     const canvas = document.getElementById('tiles-canvas');
     const W = window.innerWidth, H = window.innerHeight;
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
-    renderer.setSize(W, H); renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+    renderer.setSize(W, H, false); renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
     renderer.setClearColor(0xD9D9D4, 1);
     renderer.outputEncoding = THREE.sRGBEncoding;
 
@@ -74,7 +74,7 @@ const TEXS = MATS.map(m => {
         const W2 = window.innerWidth, H2 = window.innerHeight;
         if (W2 === lastW) return; // ignore height-only changes (mobile URL bar show/hide on scroll)
         lastW = W2;
-        camera.aspect = W2 / H2; camera.updateProjectionMatrix(); renderer.setSize(W2, H2);
+        camera.aspect = W2 / H2; camera.updateProjectionMatrix(); renderer.setSize(W2, H2, false);
     });
 })();
 
