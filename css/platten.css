@@ -578,6 +578,20 @@ section {
         grid-template-columns: 1fr;
         gap: 48px;
     }
+
+    .page-cta {
+        padding: 64px 28px;
+    }
+
+    .page-cta p {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-p {
+        height: 100svh;
+    }
 }
 
 @media (max-width: 600px) {

@@ -69,8 +69,11 @@ const TEXS = MATS.map(m => {
     }
     loop();
 
+    let lastW = window.innerWidth;
     window.addEventListener('resize', () => {
         const W2 = window.innerWidth, H2 = window.innerHeight;
+        if (W2 === lastW) return; // ignore height-only changes (mobile URL bar show/hide on scroll)
+        lastW = W2;
         camera.aspect = W2 / H2; camera.updateProjectionMatrix(); renderer.setSize(W2, H2);
     });
 })();
