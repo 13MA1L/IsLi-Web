@@ -563,6 +563,17 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .rv-r {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mat-label,
+    .mat-btns {
+        order: -1;
+        margin-bottom: 32px;
+    }
+
     .anfrage-wrap {
         grid-template-columns: 1fr;
         gap: 48px;

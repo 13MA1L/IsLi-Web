@@ -1044,7 +1044,7 @@ section {
     }
 
     .hero-left {
-        padding: 110px 28px 0;
+        padding: 89px 0 0;
         height: auto;
         justify-content: center;
     }
@@ -1052,6 +1052,7 @@ section {
     #hero-slider {
         width: 100%;
         height: min(80vw, 62vh);
+        transform: none;
     }
 
     .hero-content {
