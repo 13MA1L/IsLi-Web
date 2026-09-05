@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt IsLi GmbH – Nehmen Sie Kontakt auf für Ihr Platten- oder Keramikprojekt.">
+    <title>Kontakt – IsLi GmbH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .page-hero {
+            background: #FFFFFF;
+            padding: 180px 64px 96px;
+        }
+
+        .page-hero-inner {
+            max-width: 1380px;
+            margin: 0 auto;
+        }
+
+        .page-hero-label {
+            font-size: 11px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 20px;
+        }
+
+        .page-hero-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(42px, 5vw, 82px);
+            line-height: 0.88;
+            letter-spacing: 2px;
+        }
+
+        .page-hero-sub {
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.9;
+            max-width: 480px;
+            margin-top: 28px;
+        }
+
+        .page-hero-inner.contact-wrap {
+            align-items: center;
+        }
+
+        @media (max-width: 1024px) {
+            .page-hero {
+                padding: 140px 28px 64px;
+            }
+
+            .page-hero-title {
+                font-size: clamp(48px, 10vw, 82px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="nav" data-page="kontakt"></nav>
+
+    <!-- PAGE HERO + FORM -->
+    <div class="page-hero">
+        <div class="page-hero-inner contact-wrap">
+            <div>
+                <h1 class="page-hero-title">STARTEN<br>SIE IHR<br>PROJEKT</h1>
+                <p class="page-hero-sub rv">Wir beraten Sie kostenlos und unverbindlich. Rufen Sie an oder schreiben Sie
+                    uns — wir melden uns innerhalb eines Werktages.</p>
+            </div>
+            <form class="c-form rv-r" id="contact-form" action="https://formspree.io/f/meaqzbyy" method="POST" novalidate>
+                <div class="f-row">
+                    <div class="f-group"><label for="f-vorname">Vorname*</label><input type="text" id="f-vorname"
+                            name="Vorname" placeholder="Max" required aria-describedby="err-vorname">
+                        <span class="f-error" id="err-vorname"></span>
+                    </div>
+                    <div class="f-group"><label for="f-nachname">Nachname*</label><input type="text" id="f-nachname"
+                            name="Nachname" placeholder="Mustermann" required aria-describedby="err-nachname">
+                        <span class="f-error" id="err-nachname"></span>
+                    </div>
+                </div>
+                <div class="f-group"><label for="f-email">E-Mail*</label><input type="email" id="f-email" name="E-Mail"
+                        placeholder="max@beispiel.ch" required aria-describedby="err-email">
+                    <span class="f-error" id="err-email"></span>
+                </div>
+                <div class="f-group"><label for="f-telefon">Telefon (Optional)</label><input type="tel" id="f-telefon"
+                        name="Telefon" placeholder="+41 00 000 00 00" aria-describedby="err-telefon">
+                    <span class="f-error" id="err-telefon"></span>
+                </div>
+                <div class="f-group"><label for="f-nachricht">Nachricht*</label><textarea id="f-nachricht"
+                        name="Nachricht" placeholder="Beschreiben Sie Ihr Anliegen …" required
+                        aria-describedby="err-nachricht"></textarea>
+                    <span class="f-error" id="err-nachricht"></span>
+                </div>
+                <input type="hidden" name="_subject" value="Neue Anfrage von isli.ch">
+                <div style="position:absolute; left:-9999px; top:-9999px;" aria-hidden="true">
+                    <label>Bitte freilassen<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+                </div>
+                <button class="f-submit" type="submit">Anfrage senden</button>
+                <p class="f-msg" id="form-msg" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- CONTACT INFO + MAP -->
+    <section id="contact">
+        <div class="contact-wrap">
+            <div class="c-items rv-l">
+                <div class="c-item">
+                    <div class="c-ico"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg></div>
+                    <div>
+                        <div class="c-lbl">Telefon</div>
+                        <div class="c-val"><a href="tel:+41788294251">+41 78 829 42 51</a></div>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-ico"><svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg></div>
+                    <div>
+                        <div class="c-lbl">E-Mail</div>
+                        <div class="c-val"><a href="mailto:info@isli.ch">info@isli.ch</a></div>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-ico"><svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg></div>
+                    <div>
+                        <div class="c-lbl">Standort</div>
+                        <div class="c-val">Wintermoosstrasse 4<br>8583 Sulgen, Thurgau<br>Schweiz</div>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="c-ico"><svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12,6 12,12 16,14" />
+                        </svg></div>
+                    <div>
+                        <div class="c-lbl">Öffnungszeiten</div>
+                        <div class="c-val">Montag – Freitag<br>08:00 – 17:00 Uhr<br>Samstag: 08:00 – 12:00 Uhr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="maps-wrap rv">
+                <div class="maps-frame">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Wintermoosstrasse+4,+8583+Sulgen,+Switzerland&output=embed&hl=de&z=15"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="IsLi GmbH – Wintermoosstrasse 4, Sulgen">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <script src="js/components.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/subpage.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="IsLi GmbH Plattenverkauf – Jede Wunschplatte. Feinsteinzeug, Naturstein, Holzoptik und mehr. Beratung, Lieferung und Verlegung aus einer Hand.">
+    <title>Plattenverkauf – IsLi GmbH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/platten.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="nav" data-page="platten"></nav>
+
+    <!-- HERO -->
+    <section id="hero-p">
+        <canvas id="tiles-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title" id="p-title">IHRE<br>WUNSCH<br>PLATTE</h1>
+            <p class="hero-sub" id="p-sub">Von edlem Marmor bis modernem Feinsteinzeug — wir beschaffen jede Platte, die
+                Sie sich vorstellen können.</p>
+            <a href="#studio" class="hero-btn" id="p-btn">Entdecken</a>
+        </div>
+    </section>
+    <!-- MATERIAL STUDIO -->
+    <section id="studio">
+        <div class="s-header" style="max-width:1380px;margin:0 auto 64px;">
+            <h2 class="s-title rv">MATERIAL<br>STUDIO</h2>
+            <div class="s-divider rv"></div>
+        </div>
+        <div class="studio-wrap">
+            <canvas id="cfg-canvas" class="rv-l"></canvas>
+            <div class="rv-r">
+                <div class="studio-material-name" id="mat-name">Weisser Marmor</div>
+                <div class="studio-material-desc" id="mat-desc">Zeitlose Eleganz aus der Natur. Jede Platte ein Unikat
+                    mit einzigartiger Maserung — ideal für Bäder, Küchen und repräsentative Räume.</div>
+                <div class="studio-props">
+                    <div class="studio-prop">
+                        <div class="studio-prop-l">Rutschhemmung</div>
+                        <div class="studio-prop-v" id="prop-rut">Mittel</div>
+                    </div>
+                    <div class="studio-prop">
+                        <div class="studio-prop-l">Wasserabweisung</div>
+                        <div class="studio-prop-v" id="prop-wa">Stark</div>
+                    </div>
+                    <div class="studio-prop">
+                        <div class="studio-prop-l">Einsatz</div>
+                        <div class="studio-prop-v" id="prop-use">Innen</div>
+                    </div>
+                </div>
+                <div class="mat-label">Material Auswahl:</div>
+                <div class="mat-btns" id="mat-btns"></div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="page-cta rv" style="margin-top:130px;">
+            <h2>WIR BERATEN SIE GERN</h2>
+            <p>Sie haben Fragen zu oder möchten ein Muster sehen? Kontaktieren Sie uns unverbindlich.
+            </p>
+            <a href="kontakt.html" class="cta-btn">Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <script src="js/components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"
+        integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/platten.js"></script>
+</body>
+
+</html>
