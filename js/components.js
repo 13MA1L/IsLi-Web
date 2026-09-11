@@ -5,36 +5,28 @@
 
     /* ─── NAV ─── */
     if (navEl) {
-        const aboutHref = page === 'home' ? '#about' : `/#about`;
+        const aboutHref = page === 'home' ? '#about' : `${base}index.html#about`;
         navEl.innerHTML = `
-        <a href="/" class="nav-logo"><img src="${base}img/IsliGmbH.png" alt="IsLi GmbH"></a>
+        <a href="${base}index.html" class="nav-logo"><img src="${base}img/IsliGmbH.png" alt="IsLi GmbH"></a>
         <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
         <ul class="nav-links">
             <li>
-                <a href="/"${page === 'home' ? ' class="active"' : ''}>Home</a>
+                <a href="${base}index.html"${page === 'home' ? ' class="active"' : ''}>Home</a>
             </li>
             <li class="nav-item-drop">
                 <a href="javascript:void(0)"${page === 'leistungen' ? ' class="active"' : ''}>Leistungen</a>
                 <ul class="nav-sub">
-                    <li><a href="${base}leistungen/eigenheim-neubau">Eigenheim & Neubau</a></li>
-                    <li><a href="${base}leistungen/renovation-umbau">Renovation & Umbau</a></li>
-                    <li><a href="${base}leistungen/reparatur-service">Reparatur & Service</a></li>
-                    <li><a href="${base}platten">Plattenverkauf & Beratung</a></li>
+                    <li><a href="${base}leistungen/eigenheim-neubau.html">Eigenheim & Neubau</a></li>
+                    <li><a href="${base}leistungen/renovation-umbau.html">Renovation & Umbau</a></li>
+                    <li><a href="${base}leistungen/reparatur-service.html">Reparatur & Service</a></li>
+                    <li><a href="${base}platten.html">Plattenverkauf & Beratung</a></li>
                 </ul>
             </li>
-            <li class="nav-item-drop">
-                <a href="javascript:void(0)"${page === 'projekte' ? ' class="active"' : ''}>Referenzen</a>
-                <ul class="nav-sub">
-                    <li><a href="${base}referenzen/baeder">Bäder</a></li>
-                    <li><a href="${base}referenzen/kuechen">Küchen</a></li>
-                    <li><a href="${base}referenzen/wohnzimmer">Wohnzimmer</a></li>
-                    <li><a href="${base}referenzen/terrassen">Terrassen</a></li>
-                </ul>
-            </li>
-            <li><a href="${base}platten"${page === 'platten' ? ' class="active"' : ''}>Plattensortiment</a></li>
-            <li><a href="${base}team"${page === 'team' ? ' class="active"' : ''}>Team</a></li>
-            <li><a href="${base}karriere"${page === 'karriere' ? ' class="active"' : ''}>Karriere</a></li>
-            <li><a href="${base}kontakt" class="${page === 'kontakt' ? 'nav-cta active' : 'nav-cta'}">Kontakt</a></li>
+            <li><a href="${base}referenzen.html"${page === 'referenzen' ? ' class="active"' : ''}>Referenzen</a></li>
+            <li><a href="${base}platten.html"${page === 'platten' ? ' class="active"' : ''}>Plattensortiment</a></li>
+            <li><a href="${base}team.html"${page === 'team' ? ' class="active"' : ''}>Team</a></li>
+            <li><a href="${base}karriere.html"${page === 'karriere' ? ' class="active"' : ''}>Karriere</a></li>
+            <li><a href="${base}kontakt.html" class="${page === 'kontakt' ? 'nav-cta active' : 'nav-cta'}">Kontakt</a></li>
         </ul>`;
 
         /* ─── MOBILE MENU ─── */
@@ -104,8 +96,8 @@
             <div>
                 <div class="f-col-title">Rechtliches</div>
                 <ul class="f-links">
-                    <li><a href="${base}impressum">Impressum</a></li>
-                    <li><a href="${base}datenschutz">Datenschutz</a></li>
+                    <li><a href="${base}impressum.html">Impressum</a></li>
+                    <li><a href="${base}datenschutz.html">Datenschutz</a></li>
                 </ul>
             </div>
         </div>

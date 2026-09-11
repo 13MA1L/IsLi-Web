@@ -1,35 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-/* ─── HERO IMAGE SLIDER ─── */
-(function initHeroSlider() {
-    const slides = document.querySelectorAll('.hs-slide');
-    if (!slides.length) return;
-    let current = 0;
-    let timer;
-
-    function goTo(n) {
-        slides[current].classList.remove('active');
-        current = (n + slides.length) % slides.length;
-        const next = slides[current];
-        next.classList.remove('active');
-        void next.offsetWidth; // Animation-Reset erzwingen
-        next.classList.add('active');
-    }
-
-    function startTimer() {
-        clearInterval(timer);
-        timer = setInterval(() => goTo(current + 1), 4000);
-    }
-
-    slides[0].classList.add('active');
-    startTimer();
-
-    const prev = document.querySelector('.hs-prev');
-    const next = document.querySelector('.hs-next');
-    if (prev) prev.addEventListener('click', () => { goTo(current - 1); startTimer(); });
-    if (next) next.addEventListener('click', () => { goTo(current + 1); startTimer(); });
-})();
-
 /* ─── HERO ANIMATION ─── */
 function startHero() {
     const tl = gsap.timeline({ delay: 0.1 });
