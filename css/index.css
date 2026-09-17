@@ -1000,6 +1000,7 @@ section {
 
     .hero-content {
         flex: none;
+        width: 100%;
         padding: 120px 28px 80px;
         text-align: left;
     }
