@@ -91,7 +91,7 @@
                 <div class="f-contact-item"><span class="f-contact-text">Wintermoosstrasse 4<br>8583 Sulgen, Thurgau</span></div>
                 <div class="f-contact-item"><a href="tel:+41788294251">+41 78 829 42 51</a></div>
                 <div class="f-contact-item"><a href="mailto:info@isli.ch">info@isli.ch</a></div>
-                <div class="f-contact-item"><span class="f-contact-text">Mo – Fr: 08:00 – 17:00 Uhr<br>Sa: 08:00 – 12:00 Uhr</span></div>
+                <div class="f-contact-item"><span class="f-contact-text">Mo – Fr: 07:00 – 17:00 Uhr<br>Sa: 07:00 – 12:00 Uhr</span></div>
             </div>
             <div>
                 <div class="f-col-title">Rechtliches</div>
