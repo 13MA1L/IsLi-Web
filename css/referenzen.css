@@ -138,31 +138,42 @@
 .ref-lb-next {
     top: 50%;
     transform: translateY(-50%);
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s, background 0.3s, border-color 0.3s;
+    z-index: 1;
 }
 
 .ref-lb-prev {
-    left: 12px;
+    left: 20px;
 }
 
 .ref-lb-next {
-    right: 12px;
+    right: 20px;
 }
 
 .ref-lb-prev svg,
 .ref-lb-next svg {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     stroke: currentColor;
-    stroke-width: 1.8;
+    stroke-width: 2.4;
     fill: none;
 }
 
-.ref-lb-close:hover,
+.ref-lb-close:hover {
+    color: var(--red);
+}
+
 .ref-lb-prev:hover,
 .ref-lb-next:hover {
-    color: var(--red);
+    color: #FFFFFF;
+    background: var(--red);
+    border-color: var(--red);
 }
 
 .ref-lb-counter {
@@ -196,8 +207,23 @@
 
     .ref-lb-prev,
     .ref-lb-next {
-        width: 44px;
-        height: 44px;
+        width: 46px;
+        height: 46px;
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .ref-lb-prev {
+        left: 10px;
+    }
+
+    .ref-lb-next {
+        right: 10px;
+    }
+
+    .ref-lb-prev svg,
+    .ref-lb-next svg {
+        width: 24px;
+        height: 24px;
     }
 
     .ref-lb-close {
