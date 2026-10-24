@@ -96,6 +96,13 @@
     max-width: 84vw;
     max-height: 80vh;
     object-fit: contain;
+    touch-action: pan-y pinch-zoom;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.ref-lightbox {
+    touch-action: pan-y pinch-zoom;
 }
 
 .ref-lb-close,
