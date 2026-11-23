@@ -1029,6 +1029,20 @@ section {
 }
 
 @media (max-width: 640px) {
+    /* Weniger Höhe = mehr Bildbreite sichtbar, Bus zentriert */
+    #hero {
+        min-height: auto;
+        background-position: 47% center;
+    }
+
+    .hero-content {
+        padding: 110px 24px 48px;
+    }
+
+    .hero-sub {
+        margin-bottom: 32px;
+    }
+
     .team-grid {
         grid-template-columns: 1fr;
         gap: 32px;
