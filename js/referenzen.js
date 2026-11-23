@@ -17,10 +17,20 @@
     let images = [];
     let index = 0;
 
+    const preloaded = new Set();
+    function preload(src) {
+        if (!src || preloaded.has(src)) return;
+        preloaded.add(src);
+        new Image().src = src;
+    }
+
     function show(i) {
         index = (i + images.length) % images.length;
         lbImg.src = images[index];
         lbCounter.textContent = `${index + 1} / ${images.length}`;
+        // Nachbarbilder im Hintergrund holen, damit Vor/Zurück sofort reagiert
+        preload(images[(index + 1) % images.length]);
+        preload(images[(index - 1 + images.length) % images.length]);
     }
 
     function openLightbox(imgs, start) {
@@ -39,6 +49,10 @@
         card.addEventListener('click', () => {
             openLightbox(JSON.parse(card.dataset.images), 0);
         });
+        // Beim Hover schon das erste Grossbild holen
+        card.addEventListener('pointerenter', () => {
+            preload(JSON.parse(card.dataset.images)[0]);
+        }, { once: true });
     });
 
     lightbox.querySelector('.ref-lb-close').addEventListener('click', closeLightbox);
